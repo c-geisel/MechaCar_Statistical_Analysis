@@ -51,6 +51,29 @@ aov(hp ~ cyl,data=mtcars_filt) #compare means across multiple levels
 
 summary(aov(hp ~ cyl,data=mtcars_filt)) #use summary() to get the p-value in the output
 
+#below is notes on finding correlation and r values
 
+plt <- ggplot(mtcars,aes(x=hp,y=qsec)) #import dataset into ggplot2
+plt + geom_point() #create scatter plot
+cor(mtcars$hp,mtcars$qsec) #calculate correlation coefficient
+
+used_cars <- read.csv('used_car_data.csv',stringsAsFactors = F) #read in dataset
+head(used_cars)
+plt <- ggplot(used_cars,aes(x=Miles_Driven,y=Selling_Price)) #import dataset into ggplot2
+plt + geom_point() #create a scatter plot
+
+
+used_matrix <- as.matrix(used_cars[,c("Selling_Price","Present_Price","Miles_Driven")]) #convert data frame into numeric matrix
+cor(used_matrix)
+
+lm(qsec ~ hp,mtcars) #create linear model
+summary(lm(qsec~hp,mtcars)) #summarize linear model
+
+lm(qsec ~ mpg + disp + drat + wt + hp,data=mtcars) #generate multiple linear regression model
+summary(lm(qsec ~ mpg + disp + drat + wt + hp,data=mtcars)) #generate summary statistics
+
+# perform a chi-squared test
+tbl <- table(mpg$class,mpg$year) #generate contingency table
+chisq.test(tbl) #compare categorical distributions
 
 
