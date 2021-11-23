@@ -17,6 +17,13 @@ The summary function is then used on the previous function in order to identify 
 - Using the r squared value, future observations can be predicted as this value represents how well the model approximates real world points. There are two values listed, the multiple r squared and the adjusted r squared values. Multiple r squared values increase as more variables are added since more variables explains some variance. The adjusted r squared values acts a control for the increase of the multiple r suqared value and lowers it for the number of factors included in our regression model. With this being said we will use the adjusted r squared value of 0.6825. This value tells us that 68.25% of variability of the dependent variable is explained by our model and thus does predict the mpg of prototypes effectively. 
 
 ## Summary Statistics on Suspension Coils
-A summary statistic table is made to explore the results from multiple production lots of the MechaCar. The weights of suspension coils in this dataset are being used to determine consistency among different production lots. The table below displays information on the suspension coil amongst different lots as well as summary stastistics for each lot. 
--In your README, create a subheading ## Summary Statistics on Suspension Coils, and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
--The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+A summary statistic table is made to explore the results from multiple production lots of the MechaCar. The weights of suspension coils in this dataset are being used to determine consistency among different production lots. The table below displays summary statistics for the suspension coils:
+
+
+![total_summary.png](Images/total_summary.png)
+
+Below the summary statistics are performed again but the suspension coil PSI information is first grouped by lot number. 
+
+![lot_summary.png](Images/lot_summary.png)
+
+-The design specifications for the MechaCar state that the suspension coil variance must not exceed 100 pounds per square inch (PSI). When looking at the first total summary table, the PSI variance is at 62.3 thus meeting that 100 pound limit. But, when the data is broken up individually, Lots 1 and 2 meet the variance requirement much below 100, while the third lot exceeds this limit at 170 pounds. This shows that there must be manufacturing issues with suspension coils at lot 3. This very high value for lot 3, combined with low PSI values for lots 1 and 2 explain the seemingly normal value in our total summary table as the numbers averaged out reasonably, but by splitting them apart we can see that the third lot does not meet requirements. 
