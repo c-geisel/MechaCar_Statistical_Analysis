@@ -41,4 +41,10 @@ Next, subsets of the suspension coil data are made to get data grouped by manufa
 
 Looking at the resulting p-values for each lot, Lots 1 and 2 have significant p-values and thus there is not sufficient evidence to reject the null hypothesis meaning that there is no statistical difference between the observed and population means. Lot 3 has a p-value of 0.04 and with a significance level of 0.05, this value is not significant and we reject the null hypothesis to say there is a statistical difference between the observed and population mean. As seen upon observing the PSI variance in the analysis above, Lot 3 raises manufacturing concerns regarding suspension coils and a further inspection on this production line may beneficial for future prototypes. 
 
+## Study Design: MechaCar vs Competition
+- Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+In your description, address the following questions:
+- What metric or metrics are you going to test?
+- What is the null hypothesis or alternative hypothesis?
+- What statistical test would you use to test the hypothesis? And why?
 
