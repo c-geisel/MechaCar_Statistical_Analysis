@@ -27,3 +27,18 @@ Below the summary statistics are performed again but the suspension coil PSI inf
 ![lot_summary.png](Images/lot_summary.png)
 
 -The design specifications for the MechaCar state that the suspension coil variance must not exceed 100 pounds per square inch (PSI). When looking at the first total summary table, the PSI variance is at 62.3 thus meeting that 100 pound limit. But, when the data is broken up individually, Lots 1 and 2 meet the variance requirement much below 100, while the third lot exceeds this limit at 170 pounds. This shows that there must be manufacturing issues with suspension coils at lot 3. This very high value for lot 3, combined with low PSI values for lots 1 and 2 explain the seemingly normal value in our total summary table as the numbers averaged out reasonably, but by splitting them apart we can see that the third lot does not meet requirements. 
+
+## T-Tests on Suspension Coils
+In this third analysis, t-Tests are used to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch. First, we use a t-tes to test the PSI across all lots against the population mean. The results are as follows: 
+
+![ttest_all.png](Images/ttest_all.png)
+
+Being that we are using a significance level of 0.05, the p value is statistically significant and therefore we do not have sifficient evidence to reject the null hypothesis. This means that there is no statistical difference between the observed and population mean. 
+
+Next, subsets of the suspension coil data are made to get data grouped by manufacturing lot numbers and t-tests are performed on the PSI of each lot. The results for each t-test are shown in order:
+
+![ttest_lot1.png](Images/ttest_lot1.png) ![ttest_lot2.png](Images/ttest_lot2.png) ![ttest_lot3.png](Images/ttest_lot3.png)
+
+Looking at the resulting p-values for each lot, Lots 1 and 2 have significant p-values and thus there is not sufficient evidence to reject the null hypothesis meaning that there is no statistical difference between the observed and population means. Lot 3 has a p-value of 0.04 and with a significance level of 0.05, this value is not significant and we reject the null hypothesis to say there is a statistical difference between the observed and population mean. As seen upon observing the PSI variance in the analysis above, Lot 3 raises manufacturing concerns regarding suspension coils and a further inspection on this production line may beneficial for future prototypes. 
+
+
