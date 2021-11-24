@@ -42,9 +42,8 @@ Next, subsets of the suspension coil data are made to get data grouped by manufa
 Looking at the resulting p-values for each lot, Lots 1 and 2 have significant p-values and thus there is not sufficient evidence to reject the null hypothesis meaning that there is no statistical difference between the observed and population means. Lot 3 has a p-value of 0.04 and with a significance level of 0.05, this value is not significant and we reject the null hypothesis to say there is a statistical difference between the observed and population mean. As seen upon observing the PSI variance in the analysis above, Lot 3 raises manufacturing concerns regarding suspension coils and a further inspection on this production line may beneficial for future prototypes. 
 
 ## Study Design: MechaCar vs Competition
-- Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+In order to persaude customers that the MechaCar is worth their purchase it must find a find to display how it outranks the competition. A car can have all the looks and even a reasonable price tag, but the consumer wants a car that is going to hold up over time and that it is worth their money. This is why a new statistical study is completed.
+- In order to show customers that the MechaCar will stand the test of time compared to the competition, the means of car maitenance cost of various types of cars (including the MechaCar) based on miles driven will be compared. 
+- The Null Hypothesis for this study is that the means of all groups are equal, which the alternate hypothesis is that the at least one of the means are different from other groups. 
+- In order to complete this study, a one-way ANOVA test will be used as this tests the means of a single dependent variable across a single independent variable with multiple groups. 
+- In order to run this statistical test, data is needed from the MechaCar and various other cars in competition with us that displays data on maitenence cost on the car deoending on car mileage. 
